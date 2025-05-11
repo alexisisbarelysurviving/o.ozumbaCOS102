@@ -11,7 +11,7 @@ def yourdeliveryfee(fee):
 
 
 def go():
-    weight = weight_entry.get()
+    weight = int(weight_entry.get())
     location = location_entry.get()
 
     if weight >= 10 and location == "PAU":
@@ -31,16 +31,16 @@ root.title("Delivery System")
 root.geometry("500x200")
 
 # Create username label and entry
-username_label = tk.Label(root, text="Weight:")
-username_label.pack()
-username_entry = tk.Entry(root)
-username_entry.pack()
+weight_label = tk.Label(root, text="Weight:")
+weight_label.pack()
+weight_entry = tk.Entry(root)
+weight_entry.pack()
 
 # Create password label and entry
-password_label = tk.Label(root, text="Location (Epe or PAU):")
-password_label.pack()
-password_entry = tk.Entry(root)
-password_entry.pack()
+location_label = tk.Label(root, text="Location (Epe or PAU):")
+location_label.pack()
+location_entry = tk.Entry(root)
+location_entry.pack()
 
 # Create submit button
 submit_button = tk.Button(root, text="Go", command=go)
