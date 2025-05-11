@@ -16,16 +16,19 @@ def welcomemessage(username):
 
 def submit():
     username = username_entry.get()
-    password =password_entry.get()
+    password = password_entry.get()
 
     if username == "mary" and password == "cos102":
         welcomemessage(username)
     else:
         messagebox.showerror("login", "invalid username or password")
+
+
 # Create main window
 root = tk.Tk()
 root.title("Login Form")
 root.geometry("500x200")
+
 
 # Create username label and entry
 username_label = tk.Label(root, text="Username:")
