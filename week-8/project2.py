@@ -16,11 +16,11 @@ def go():
 
     if weight >= 10 and location == "PAU":
         yourdeliveryfee(2000)
-    if weight <= 10 and location == "PAU":
+    elif weight <= 10 and location == "PAU":
         yourdeliveryfee(1500)
-    if weight >= 10 and location == "Epe":
+    elif weight >= 10 and location == "Epe":
         yourdeliveryfee(5000)
-    if weight <= 10 and location == "Epe":
+    elif weight <= 10 and location == "Epe":
         yourdeliveryfee(4000)
     else:
         messagebox.showerror("invalid", "try again")
