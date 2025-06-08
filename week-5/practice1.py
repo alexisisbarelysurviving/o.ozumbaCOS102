@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox as msgbox
 
 def button_click():
     msgbox.showinfo("info", "welcome to cos 102 gui app!\n")
